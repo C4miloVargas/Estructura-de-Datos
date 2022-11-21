@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ajustes.gif" type="image/x-icon">
+    <title>Definiciones</title>
+</head>
+
+<body background="img/fondo.jpg">
+    <div id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="title"><span>ESTRUCTURA DE DATOS</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
+
+
+        <div id="profile">
+            <div id="photo"><img src="img/1.jpg" alt=""></div>
+
+            <div id="name"><span>Julian N.- Camilo V.</span></div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="index.html">
+                    <div class="icon"><img src="img/datos.png" alt=""></div>
+                    <div class="title"><span>¿QUE ES?</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="index-js.html">
+                    <div class="icon"><img src="img/javascriptx.png" alt=""></div>
+                    <div class="title"><span>Javascript</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-php.html">
+                    <div class="icon"><img src="img/phpx.png" alt=""></div>
+                    <div class="title"><span>Php</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-c++.html">
+                    <div class="icon"><img src="img/c.png" alt=""></div>
+                    <div class="title"><span>C++</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-python.html">
+                    <div class="icon"><img src="img/piton.png" alt=""></div>
+                    <div class="title"><span>Python</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <h1><br>Estructuras de Datos</h1>
+        <div class="estru">
+            <div>
+                <h3>¿Que es Estructura de Datos?</h3>
+                <p>Las estructuras de datos son una forma de organizar los datos en la computadora, de tal manera que
+                    nos permita realizar unas operaciones con ellas de forma muy eficiente y en
+                    programación son un modo de representar información en una computadora,
+                    aunque además, cuentan con un comportamiento interno. <br>
+                    ¿Qué significa? Que se rige por determinadas
+                    reglas/restricciones que han sido dadas por la forma en que está construida internamente.</p>
+            </div>
+            <div class="etd">
+                <img src="img/etd.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+            <h3>¿Para qué sirven las estructuras de datos?</h3>
+            <p>En el ámbito de la informática, las estructuras de datos son aquellas que nos permiten, como
+                desarrolladores,
+                organizar la información de manera eficiente, y en definitiva diseñar la solución correcta para un
+                determinado problema.</p>
+        </div>
+        <div class="p-datos">
+            <div class="estatic">
+                <h3>Datos estáticas </h3>
+                <p>son aquellas en las que el tamaño ocupado en memoria se define antes
+                    de que el programa se ejecute y no puede modificarse dicho tamaño durante la ejecución del programa,
+                    mientras que una estructura. </p>
+                <div class="img-estatic">
+                    <img src="img/estaticos.png" alt=""><br>
+                </div>
+            </div>
+            <div class="dinamic">
+                <h3>Datos dinámica </h3>
+                <p>Es aquella en la que el tamaño ocupado en memoria puede modificarse durante la ejecución del
+                    programa.
+                </p>
+                <div class="img-dinamic">
+                    <img src="img/dinamicos.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        })
+    </script>
+</body>
+
+</html>

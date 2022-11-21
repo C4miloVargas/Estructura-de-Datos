@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/style-js.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ajustes.gif" type="image/x-icon">
+    <title>Definiciones</title>
+</head>
+
+<body background="img/fondo.jpg">
+    <div id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="title"><span>ESTRUCTURA DE DATOS</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
+
+
+        <div id="profile">
+            <div id="photo"><img src="img/1.jpg" alt=""></div>
+
+            <div id="name"><span>Julian N.- Camilo V.</span></div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="index.html">
+                    <div class="icon"><img src="img/datos.png" alt=""></div>
+                    <div class="title"><span>¿QUE ES?</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="index-js.html">
+                    <div class="icon"><img src="img/javascriptx.png" alt=""></div>
+                    <div class="title"><span>Javascript</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-php.html">
+                    <div class="icon"><img src="img/phpx.png" alt=""></div>
+                    <div class="title"><span>Php</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-c++.html">
+                    <div class="icon"><img src="img/c.png" alt=""></div>
+                    <div class="title"><span>C++</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-python.html">
+                    <div class="icon"><img src="img/piton.png" alt=""></div>
+                    <div class="title"><span>Python</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <h1><br>C++</h1>
+        <div class="estru">
+            <div class="etd">
+                <img src="img/c++.jpg" alt="">
+            </div>
+            <div class="es-p">
+                <h3>¿Que es C++?</h3>
+                <p>C++ es un lenguaje de programación diseñado a mediados de los años 1980 por Bjarne Stroustrup. 
+                    La intención de su creación
+                    fue el extender al lenguaje de programación C mecanismos que permiten la manipulación de objetos.
+                    Posteriormente se añadieron facilidades de programación genérica, que se sumaron a los paradigmas de 
+                    programación estructurada y programación orientada a objetos.
+                    Por esto se suele decir que el C++ es un lenguaje de programación multiparadigma.</p>
+            </div>
+
+        </div>
+        <h3>Estructura de Datos en C++</h3>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Listas</h2>
+                <div class="img-list">
+                    <img src="img/listas-c++1.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Listas</h2>
+                <img src="img/lista-c++.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Pilas</h2>
+                <div class="img-list">
+                    <img src="img/pilas-c++1.png" alt="">
+                    <img src="img/pilas-c++2.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Pilas</h2>
+                <img src="img/pila-c++.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Colas</h2>
+                <div class="img-list">
+                    <img src="img/cola_c++1.png" alt="">
+                    <img src="img/cola-c++2.png" alt="">
+                    <h2>Se elimino los numeros agragados</h2>
+                    <img src="img/cola_c++3.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Colas</h2>
+                <img src="img/cola-c++.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Arboles</h2>
+                <div class="img-list">
+                    <img src="img/arbol-c++1.png" alt="">
+                    <img src="img/arbol-c++2.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Arboles</h2>
+                <img src="img/arbol-c++.png" alt="">
+            </div>
+        </div>
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#sidemenu');
+            btn.addEventListener('click', e => {
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+    
+                document.querySelector('body').classList.toggle('body-expanded');
+            })
+        </script>
+    </body>
+    
+    </html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/style-python.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ajustes.gif" type="image/x-icon">
+    <title>Definiciones</title>
+</head>
+
+<body background="img/fondo.jpg">
+    <div id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="title"><span>ESTRUCTURA DE DATOS</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
+
+
+        <div id="profile">
+            <div id="photo"><img src="img/1.jpg" alt=""></div>
+
+            <div id="name"><span>Julian N.- Camilo V.</span></div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="index.html">
+                    <div class="icon"><img src="img/datos.png" alt=""></div>
+                    <div class="title"><span>¿QUE ES?</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="index-js.html">
+                    <div class="icon"><img src="img/javascriptx.png" alt=""></div>
+                    <div class="title"><span>Javascript</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-php.html">
+                    <div class="icon"><img src="img/phpx.png" alt=""></div>
+                    <div class="title"><span>Php</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-c++.html">
+                    <div class="icon"><img src="img/c.png" alt=""></div>
+                    <div class="title"><span>C++</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-python.html">
+                    <div class="icon"><img src="img/piton.png" alt=""></div>
+                    <div class="title"><span>Python</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <h1><br>Python</h1>
+        <div class="estru">
+            <div class="etd">
+                <img src="img/python.png" alt="">
+            </div>
+            <div class="es-p">
+                <h3>¿Que es Python?</h3>
+                <p>Python es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software,
+                    la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python 
+                    porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes.</p>
+            </div>
+
+        </div>
+        <h3>Estructura de Datos en Python</h3>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Listas</h2>
+                <div class="img-list">
+                    <img src="img/lista-python1.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Listas</h2>
+                <img src="img/lista-pyhon.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Pilas</h2>
+                <div class="img-list">
+                    <img src="img/pila-puthon1.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Pilas</h2>
+                <img src="img/pila-python.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Colas</h2>
+                <div class="img-list">
+                    <img src="img/cola-python1.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Colas</h2>
+                <img src="img/cola-python.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Arboles</h2>
+                <div class="img-list">
+                    <img src="img/arboles-python1.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Arboles</h2>
+                <img src="img/arboles_python.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Grafos</h2>
+                <div class="img-list">
+                    <img src="img/grafos-python1.png" alt="">
+                </div>
+            </div>
+            <div class="img-lista">
+                <h2>Codigo Grafos</h2>
+                <img src="img/grafos-python.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Operadores</h2>
+                    <div class="img-list">
+                        <h2>aritmeticos</h2>
+                        <img src="img/aritmetico-python.png" alt="">
+                    </div>
+                </div>
+                <div class="img-lista">
+                    <h2>Relacionales</h2>
+                    <img src="img/relacionales-python.png" alt="">
+                </div>
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Logicos</h2>
+                    <div class="img-list">
+                        <img src="img/logico-python.png" alt="">
+                    </div>
+                </div>
+        </div>
+                            
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#sidemenu');
+            btn.addEventListener('click', e => {
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+    
+                document.querySelector('body').classList.toggle('body-expanded');
+            })
+        </script>
+    </body>
+    
+    </html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/style-js.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ajustes.gif" type="image/x-icon">
+    <title>Definiciones</title>
+</head>
+
+<body background="img/fondo.jpg">
+    <div id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="title"><span>ESTRUCTURA DE DATOS</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
+
+
+        <div id="profile">
+            <div id="photo"><img src="img/1.jpg" alt=""></div>
+
+            <div id="name"><span>Julian N.- Camilo V.</span></div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="index.html">
+                    <div class="icon"><img src="img/datos.png" alt=""></div>
+                    <div class="title"><span>¿QUE ES?</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="index-js.html">
+                    <div class="icon"><img src="img/javascriptx.png" alt=""></div>
+                    <div class="title"><span>Javascript</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-php.html">
+                    <div class="icon"><img src="img/phpx.png" alt=""></div>
+                    <div class="title"><span>Php</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-c++.html">
+                    <div class="icon"><img src="img/c.png" alt=""></div>
+                    <div class="title"><span>C++</span></div>
+
+                </a>
+            </div>
+            <div class="item">
+                <a href="index-python.html">
+                    <div class="icon"><img src="img/piton.png" alt=""></div>
+                    <div class="title"><span>Python</span></div>
+
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item separator">
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <h1><br>Javascript</h1>
+        <div class="estru">
+            <div class="etd">
+                <img src="img/js.jpg" alt="">
+            </div>
+            <div class="es-p">
+                <h3>¿Que es Javascript?</h3>
+                <p>JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a
+                    tu
+                    sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos
+                    son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más). Este
+                    artículo
+                    te ayudará a comenzar con este lenguaje extraordinario y te dará una idea de qué es posible hacer
+                    con él.</p>
+            </div>
+
+        </div>
+        <h3>Estructura de Datos en Javascript</h3>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Listas</h2>
+                <h3>Ingrese datos numericos</h3>
+                <label for="num1">Numero 1</label>
+                <input type="number" name="num" id="num1">
+                <label for="num2">Numero 2</label>
+                <input type="number" name="num" id="num2">
+                <label for="num3">Numero 3</label>
+                <input type="number" name="num" id="num3">
+                <h4>Mostrar Lista</h4>
+                <label id="texto"></label>
+                <h4>Elimina el ultimo</h4>
+                <label id="texto1"></label>
+                <h4>Agrega al primer espacio(10)</h4>
+                <label id="texto2"></label>
+                <h4>Borra el primer numero</h4>
+                <label id="texto3"></label><br>
+
+                <button class="button" onclick="mostrar_input()">Mostrar</button>
+                <script>
+                    function mostrar_input() {
+                        let milista = [];
+
+                        milista.push(document.getElementById("num1").value); // agregar numeros
+                        console.log(milista);
+
+                        milista.push(document.getElementById("num2").value);
+                        console.log(milista);
+
+                        milista.push(document.getElementById("num3").value);
+                        console.log(milista);
+
+                        var mostrar_p = document.getElementById('texto');
+                        mostrar_p.innerHTML = milista;
+
+                        milista.pop(); //elimina el ultimo
+                        var objetivo = document.getElementById('texto1');
+                        objetivo.innerHTML = milista;
+
+                        milista.unshift(10); //agregar al primer espacio
+                        var agregar_espacio = document.getElementById('texto2');
+                        agregar_espacio.innerHTML = milista;
+
+                        milista.shift(); // remueve el primer numero
+                        var p_numero = document.getElementById('texto3');
+                        p_numero.innerHTML = milista;
+
+                    }
+                </script>
+            </div>
+            <div class="img-lista">
+                <img src="img/lista.png" alt="">
+            </div>
+
+        </div>
+        <div class="basic">
+
+
+            <div class="lista">
+                <h2>Pila</h2>
+                <h3>Ingrese datos numericos</h3>
+                <label for="num1p">Numero 1</label>
+                <input type="number" name="num" id="num1p">
+                <label for="num2p">Numero 2</label>
+                <input type="number" name="num" id="num2p">
+                <label for="num3p">Numero 3</label>
+                <input type="number" name="num" id="num3p">
+                <h4>Mostrar Lista</h4>
+                <label id="textop"></label>
+                <h4>Cuantos elemetos hay</h4>
+                <label id="texto1p"></label>
+                <h4>Borra un elemento</h4>
+                <label id="texto2p"></label>
+                <h4>Dice si esta Vacia</h4>
+                <label id="texto3p"></label>
+                <h4>Vacia la pila</h4>
+                <label id="texto4p"></label>
+                <h4>Cuantos elementos hay</h4>
+                <label id="texto5p"></label><br>
+
+                <button class="button" onclick="mostrarp_input()">Mostrar</button>
+                <script>
+                    class Pila {
+                        elementos = [];
+
+                        push = (elemento) => {
+                            return this.elementos.push(elemento);
+                        };
+                        pop = () => {
+                            return this.elementos.pop();
+                        };
+                        isempty = () => {
+                            return this.elementos.length === 0;
+                        };
+                        empty = () => {
+                            this.elementos.length = 0;
+                        };
+                        size = () => {
+                            return this.elementos.length;
+                        };
+                        print = () => {
+                            return this.elementos;
+                        }
+                    }
+                    function mostrarp_input() {
+                        const pila = new Pila();
+                        // Agregamos elementos a la pila
+                        pila.push(document.getElementById("num1p").value);
+                        pila.push(document.getElementById("num2p").value);
+                        pila.push(document.getElementById("num3p").value);
+                        var pri = document.getElementById('textop');
+                        pri.innerHTML = pila.print();
+                        var taman = document.getElementById('texto1p');
+                        taman.innerHTML = pila.size();
+                        var p = document.getElementById('texto2p');
+                        p.innerHTML = pila.pop();
+                        var m = document.getElementById('texto3p');
+                        m.innerHTML = pila.isempty();
+                        var borrar = document.getElementById('texto4p');
+                        borrar.innerHTML = pila.empty();
+                        var tamaño = document.getElementById('texto5p');
+                        tamaño.innerHTML = pila.size();
+                    };
+                </script>
+            </div>
+            <div class="img-lista">
+                <img src="img/pila.png" alt="">
+            </div>
+
+
+        </div>
+        <div class="basic">
+            <div class="lista">
+                <h2>Cola</h2>
+                <h3>Ingrese datos numericos</h3>
+                <label for="num1c">Numero 1</label>
+                <input type="number" name="num" id="num1c">
+                <label for="num2c">Numero 2</label>
+                <input type="number" name="num" id="num2c">
+                <label for="num3c">Numero 3</label>
+                <input type="number" name="num" id="num3c">
+                <h4>Mostrar Lista</h4>
+                <label id="textoc"></label>
+                <h4>Cuantos elemetos hay</h4>
+                <label id="texto1c"></label>
+                <h4>Borra un elemento</h4>
+                <label id="texto2c"></label>
+                <h4>Mostrar</h4>
+                <label id="texto3c"></label>
+                <h4>Dice si esta Vacia</h4>
+                <label id="texto4c"></label>
+                <h4>Mustra la pila vacia</h4>
+                <label id="texto5c"></label><br>
+
+                <button class="button" onclick="mostrarc_input()">Mostrar</button>
+                <script>
+                    class Cola {
+                        elementosc = [];
+
+                        add = (elementoc) => {
+                            return this.elementosc.push(elementoc);
+                        }
+                        remove = () => {
+                            return this.elementosc.shift();
+                        }
+                        isempty = () => {
+                            return this.elementosc.length === 0;
+                        }
+                        empty = () => {
+                            this.elementosc.length = 0;
+                        }
+                        size = () => {
+                            return this.elementosc.length;
+                        }
+                        print = () => {
+                            return this.elementosc;
+                        }
+                    };
+                    function mostrarc_input() {
+                        const cola = new Cola();
+                        // Agregamos elementos a la cola
+                        cola.add(document.getElementById("num1c").value);
+                        cola.add(document.getElementById("num2c").value);
+                        cola.add(document.getElementById("num3c").value)
+                        var pric = document.getElementById('textoc');
+                        pric.innerHTML = cola.print();
+                        var tamanc = document.getElementById('texto1c');
+                        tamanc.innerHTML = cola.size();
+                        var pc = document.getElementById('texto2c');
+                        pc.innerHTML = cola.remove();
+                        var pritc = document.getElementById('texto3c');
+                        pritc.innerHTML = cola.print();
+                        var mc = document.getElementById('texto4c');
+                        mc.innerHTML = cola.empty();
+                        var borrarc = document.getElementById('texto5c');
+                        borrarc.innerHTML = cola.print();
+
+                    };
+                </script>
+            </div>
+            <div class="img-lista">
+                <img src="img/cola.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+            <div class="lista">
+                <h2>Arbol</h2>
+                <h3>Ingrese datos numericos</h3>
+                <label for="principal">Cabecera</label>
+                <input type="number" name="num" id="principal">
+                <label for="num1a">Numero 1</label>
+                <input type="number" name="num" id="num1a">
+                <label for="num2a">Numero 2</label>
+                <input type="number" name="num" id="num2a">
+                <label for="num3a">Numero 3</label>
+                <input type="number" name="num" id="num3a">
+                <label for="num4a">Numero 4</label>
+                <input type="number" name="num" id="num4a">
+                <h4>Para mostrar arbol debe dirijirse a la consola</h4>
+
+
+                <button class="button" onclick="mostrarA_input()">Mostrar</button>
+                <script>
+                    class node {
+                        constructor(value) {
+                            this.value = value;
+                            this.left = null;
+                            this.right = null;
+                        }
+
+
+                        add(value) {
+                            if (value < this.value) {
+                                this.addToTheLeft(value);
+                            } else {
+                                this.addToTheRight(value);
+                            }
+                        }
+
+                        addToTheLeft(value) {
+                            if (this.left) {
+                                this.left.add(value);
+                            } else {
+                                this.left = new node(value);
+                            }
+                        }
+
+                        addToTheRight(value) {
+                            if (this.right) {
+                                this.right.add(value);
+                            } else {
+                                this.right = new node(value);
+                            }
+                        }
+                    }
+                    function mostrarA_input() {
+                        // segun el valor, a la izquierda siempre va el menor y a la derecha el mayor
+                        const head = new node(document.getElementById("principal").value);
+
+                        head.add(document.getElementById("num1a").value);
+
+                        head.add(document.getElementById("num2a").value);
+
+                        head.add(document.getElementById("num3a").value);
+
+                        head.add(document.getElementById("num4a").value);
+
+                        console.log(head);
+
+                    }
+                </script>
+            </div>
+            <div class="img-lista">
+                <img src="img/arbol.png" alt="">
+            </div>
+        </div>
+        <div class="basic">
+            <div class="lista">
+                <h2>Asignacion</h2>
+                <h3>Aritmeticos</h3>
+                <h4>x = 10</h4>
+                <label id="textoS"></label>
+                <h4>y = 5</h4>
+                <label id="textoS1"></label>
+                <h4>x = y + 1</h4>
+                <label id="textoS2"></label><br>
+
+                <button class="button" onclick="mostrarS_input()">Mostrar</button>
+
+                <h3>Asignacion</h3>
+                <h4>z = 5</h4>
+                <label id="textoS3"></label>
+                <h4>n = 10</h4>
+                <label id="textoS4"></label>
+                <h4>z = n</h4>
+                <label id="textoS5"></label><br>
+
+                <button class="button" onclick="mostrarSA_input()">Mostrar</button>
+
+                
+                <h3>Comparacion</h3>
+                <h4>e = 13</h4>
+                <label id="textoS6"></label>
+                <h4>o = 34</h4>
+                <label id="textoS7"></label>
+                <h4>e == o</h4>
+                <label id="textoS8"></label>
+                <h4>e < o</h4>
+                <label id="textoS9"></label><br>
+
+                <button class="button" onclick="mostrarSC_input()">Mostrar</button>
+
+                <h3>Logicos</h3>
+                <h4>m = 6</h4>
+                <label id="textoS10"></label>
+                <h4>g = 6</h4>
+                <label id="textoS11"></label>
+                <h4>2 > 4 && m == g</h4>
+                <label id="textoS12"></label><br>
+
+                <button class="button" onclick="mostrarSL_input()">Mostrar</button>
+                <script>
+                    //aritmeticos
+                    function mostrarS_input(){
+                        let x = 10;
+                        const y = 5;
+                        
+                        document.getElementById("textoS").innerHTML = x ;
+                        document.getElementById("textoS1").innerHTML = y ;
+                        const p = (x = y + 1);
+                        document.getElementById("textoS2").innerHTML = p;
+                            
+
+                    }
+                    //asignacion
+                    function mostrarSA_input(){
+                        var z = 5;
+                        var n = 10;
+                        document.getElementById("textoS3").innerHTML = z ;
+                        document.getElementById("textoS4").innerHTML = n ;
+                        var b = (z = n);
+                        document.getElementById("textoS5").innerHTML = b ;
+                        
+    
+
+                    }
+                    //comparacion
+                    function mostrarSC_input(){
+                        var e = 13;
+                        var o = 34;
+    
+                        document.getElementById("textoS6").innerHTML = e;
+                        document.getElementById("textoS7").innerHTML = o;
+                        var l = (e == o)
+                        document.getElementById("textoS8").innerHTML = l;
+                        var k = e < o
+                        document.getElementById("textoS9").innerHTML = k;
+                        
+                    }
+                    //logicos
+                    function mostrarSL_input(){
+                        var m = 6;
+                        var g = 6;
+
+                        document.getElementById("textoS10").innerHTML = m;
+                        document.getElementById("textoS11").innerHTML = g;
+                        var j = (2 > 4 && m == g);
+                        document.getElementById("textoS12").innerHTML = j;
+                    }
+                </script>
+            </div>
+            <div class="img-lista">
+                <img class="al" src="img/aritmeticos.png" alt="">
+                <img class="al" src="img/asignacion.png" alt="">
+                <img class="al" src="img/comparacion.png" alt="">
+                <img class="al" src="img/logicos.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        })
+    </script>
+</body>
+
+</html>
